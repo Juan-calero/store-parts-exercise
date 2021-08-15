@@ -25,9 +25,9 @@ What we value:
 
 Extra Features:
 
-- "Order by price" button, Type of parts input and Search queries are all implemented on SPA side, and automatically update the parts without the need to submit (e.g. press ENTER).
+- "Order by price" button, type of parts and Search queries are all implemented on SPA side, and automatically update the parts without the need to submit (e.g. no need to press ENTER).
 - Dynamically generated Product Page, accessible upon product click.
-- "Back" button on product page, to return to the main page.
+- "Go Back" button on product page, to return to the main page.
 
 Hope you Like it! (っ＾ ▿ ＾)っ
 
@@ -41,7 +41,7 @@ Hope you Like it! (っ＾ ▿ ＾)っ
 
 ## Tech Used
 
-For this project I used the React Framework along with SASS in development, and Jest, Enzyme and React-testing-library for testing.
+I developed this project using React.js and SASS, and used Jest, Enzyme and react-testing-library for testing.
 
 ## API Documentation
 
@@ -50,6 +50,8 @@ To run the API you will need to:
 1. Install the dependencies
 2. Start the server (wich will start on port `8081`)
 3. On a separate terminal, run the react app (wich will start on port `3000` and should pop up on a new browser window)
+
+WARNING: You need to start the server on a different terminal than the react app, otherwise React won't have anything to fetch!
 
 Yarn:
 
@@ -81,5 +83,5 @@ npm run start
 
 Endpoints on port `8081`:
 
-- `/store/parts` to get the all the parts.
+- `/store/parts` to get all the parts.
 - `/store/part-types` to get the part types.
