@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# STORE-PARTS-EXERCISE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello and welcome! This project is my solution to Mozantech's recruitment challenge "store-parts-exercise", built using the React Framework.
 
-## Available Scripts
+## Goal
 
-In the project directory, you can run:
+The main goal of the exercise is to build a Single Page Application to extend an API.
 
-### `npm start`
+Requirements Met:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Two different routes ☑
+- The possibility to order by price implemented on the SPA side ☑
+- A way to request different parts by type ☑
+- The ability to request different search queries on typing ☑
+- Create a public repo to share your work with us ☑
+- An accurate README to show us how to run your app ☑
+- You should not change this service ☑
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+What we value:
 
-### `npm test`
+- Static typing ☑
+- Eslint ☑
+- Unit tests ☑
+- Your unique skills ☑
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Extra Features:
 
-### `npm run build`
+- "Order by price" button, Type of parts input and Search queries are all implemented on SPA side, and automatically update the parts without the need to submit (e.g. press ENTER).
+- Dynamically generated Product Page, accessible upon product click.
+- "Back" button on product page, to return to the main page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Hope you Like it! (っ＾ ▿ ＾)っ
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Main page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Main Page](assets/main-page.jpg "Main Page")
 
-### `npm run eject`
+#### Parts page
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Part Page](assets/parts-page.jpg "Part Page")
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+For this project I used the React Framework along with SASS in development, and Jest, Enzyme and React-testing-library for testing.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## API Documentation
 
-## Learn More
+To run the API you will need to:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Install the dependencies
+2. Start the server (wich will start on port `8081`)
+3. On a separate terminal, run the react app (wich will start on port `3000` and should pop up on a new browser window)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Yarn:
 
-### Code Splitting
+```
+yarn install
+yarn run server
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+then, on a different terminal:
 
-### Analyzing the Bundle Size
+```
+yarn run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+or
 
-### Making a Progressive Web App
+NPM:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+npm install
+npm run server
+```
 
-### Advanced Configuration
+then, on a different terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm run start
+```
 
-### Deployment
+Endpoints on port `8081`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `/store/parts` to get the all the parts.
+- `/store/part-types` to get the part types.

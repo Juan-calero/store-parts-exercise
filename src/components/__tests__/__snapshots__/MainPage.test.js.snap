@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<main
+  className="mainSection"
+>
+  <form
+    className="mainForm"
+  >
+    <input
+      aria-label="Search"
+      onChange={[Function]}
+      placeholder="Search..."
+      type="search"
+      value=""
+    />
+    <select
+      aria-label="Type"
+      onChange={[Function]}
+    >
+      <option
+        value="Type"
+      >
+        Type
+      </option>
+    </select>
+    <input
+      aria-label="Price Order"
+      className="priceOrder"
+      onClick={[Function]}
+      type="button"
+      value="Ascending Price"
+    />
+  </form>
+  <section
+    className="productSection"
+  >
+    <ul />
+  </section>
+</main>
+`;

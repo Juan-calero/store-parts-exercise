@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should match snapshot 1`] = `
+<li>
+  <a
+    className="item"
+    href="/product/Mouse 1"
+    onClick={[Function]}
+  >
+    <p>
+      Mouse 1
+    </p>
+    <p>
+      Mouse
+    </p>
+    <p>
+      112.00$
+    </p>
+  </a>
+</li>
+`;
